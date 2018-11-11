@@ -20,7 +20,7 @@ RUN chmod +x /data/dynhost \
     && ln -s /data/dynhost /etc/periodic/15min/dynhost
 
 # Cleaning the image
-rm -rf /var/cache/apk/*
+RUN rm -rf /var/cache/apk/*
 
 # INIT
 
